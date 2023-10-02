@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="tablettes.css" media="only screen and (min-width: 600px) and (max-width: 1080px)">
-    <link rel="stylesheet" href="pc.css" media="only screen and (min-width: 1080px)">
+    <script src="https://kit.fontawesome.com/93b48439f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/tablettes.css"
+        media="only screen and (min-width: 600px) and (max-width: 1080px)">
+    <link rel="stylesheet" href="./styles/pc.css" media="only screen and (min-width: 1080px)">
 
     <title>Débuts de la fin</title>
 </head>
@@ -17,97 +17,101 @@
 <body>
     <header>
         <nav id="nav-header">
-            <a><img id="logo"src="./images/logo.png" alt="Debuts de la fin"></a>
-            <input id="searchbar" type="text" name="search" placeholder="Recherche">
-            <a href="connexion.html"><img src="./images/acount.png" alt="Debuts de la fin"></a>
+            <a href="http://localhost/debutsdelafin2/index.html"><img id="logo" src="./images/logo.png"
+                    alt="Debuts de la fin"></a>
+            <form class="search-form">
+                <input type="text" placeholder="Rechercher...">
+                <i class="fas fa-search search-icon"></i>
+            </form>
+            <a href="http://localhost/debutsdelafin2/connectionForm.php"><img src="./images/acount.png"
+                    alt="Debuts de la fin"></a>
         </nav>
+        <nav class="bottom-nav">
+            <ul id="dropdown-menu">
+                <li><a href="presentation.html">PRESENTATION / REGLES</a></li>
+                <li><a href="sections.html">ET SI ? </a></li>
+                <li><a href="sections.html">LES DEBUTS DE LA FIN</a></li>
+                <li><a href="sections.html">UNE AUTRE SAISON ? </a></li>
+                <li><a href="sections.html">CADAVRE EXQUIS </a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <nav class="sidenav" id="mySidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="sections.html">Et si ? </a></li>
+                <li><a href="sections.html">Les débuts de la fin</a></li>
+                <li><a href="sections.html">Une autre saison ? </a></li>
+                <li><a href="sections.html">Cadavre Exquis </a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
     </header>
     <main>
-        <p><a href="auteurs.html">Auteurs</a> <a href="oeuvres.html">Toutes les oeuvres</a></p>
         <nav>
             <ul class="menu">
-                <li><a href="accueil.html"><br>Et<br> si...</a></li>
+                <li><a href="accueil.html"><br>Et si...</a></li>
                 <li><a href="accueil.html"><br>Les débuts de la fin</a></li>
                 <li><a href="accueil.html"><br>Une autre saison</a></li>
                 <li><a href="accueil.html"><br>Cadavre exquis</a></li>
             </ul>
         </nav>
+
+
+        <section class="section1">
+            <div>
+                <h2>ET SI...<span class="underline2"></span></h2>
+                <p>Vous avez déjà regardé, lu ou joué à une œuvre de fiction et vous vous êtes demandé : Et si les choses s'étaient passées différemment ? 
+                    Et si un événement crucial avait été évité ou si une décision majeure avait été prise autrement ?
+                    Nous vous offrons l'opportunité d'explorer ces univers parallèles, de plonger dans des réalités alternatives et de réinventer le destin de vos personnages préférés. Dans cette section, les fans de tous horizons sont invités à laisser libre cours à leur créativité et à partager leurs propres histoires 'Et si ?'.
+                    Laissez votre imagination vagabonder, réinventez les événements, défiez les conventions et partagez vos idées avec d'autres passionnés.
+                </p>
+                <button class="button">Ajoute ton histoire!</button>
+            </div>
+
+        </section>
         <nav>
             <ul class="grid">
                 <li><img class="images2" src="./images/logo1.png" alt="films"></li>
-                <li><img class="images2" src="./images/logo2.png" alt="séries"></li>
-                <li><img class="images2" src="./images/logo3.png" alt="Manga,animés"></li>
-                <li><img class="images2" src="./images/logo4.png" alt="BD,Comics"></li>
-                <li><img class="images2" src="./images/logo5.png" alt="Jeux vidéo"></li>
-                <li><img class="images2" src="./images/logo7.png" alt="Livres"></li>
+                <li><img class="images2" src="./images/logo2.png" alt="films"></li>
+                <li><img  class="images2" src="./images/logo3.png" alt="Manga,animés"></li>
+                <li><img  class="images2" src="./images/logo4.png" alt="BD,Comics"></li>
+                <li><img  class="images2" src="./images/logo5.png" alt="Jeux vidéo"></li>
+                <li><img  class="images2" src="./images/logo7.png" alt="Livres"></li>
                 <li><img class="images2" src="./images/logo6.png" alt="Tout"></li>
             </ul>
         </nav>
-        <main>
+        <section>
             <article class="card grille2">
-                <section class="card-body">
-                    <h3>Et si... Changez le cours de l'histoire!</h4>
-                    </div>
-                    <br>
-                    <h4>Histoire 1</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores voluptatum error eaque, quia
-                        placeat
-                        alias
-                        debitis earum dolorum aperiam obcaecati
-                        laborum assumenda nostrum dolor maxime recusandae hic deserunt neque illum.S[...]</p>
-                        <br>
-                        <hr>
-                    <h4>Histoire 2</h4>
-                    <br>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores voluptatum error eaque, quia
-                        placeat
-                        alias
-                        debitis earum dolorum aperiam obcaecati
-                        laborum assumenda nostrum dolor maxime recusandae hic deserunt neque illum.S[...]</p>
-                    <br>
-                    <hr>
-                    <h4>Histoire 3</h4>
-                    <br>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores voluptatum error eaque, quia
-                        placeat
-                        alias
-                        debitis earum dolorum aperiam obcaecati
-                        laborum assumenda nostrum dolor maxime recusandae hic deserunt neque illum.S[...]</p>
-                    <hr>
-                    <h4>Histoire 4</h4>
-                    <br>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores voluptatum error eaque, quia
-                        placeat
-                        alias
-                        debitis earum dolorum aperiam obcaecati
-                        laborum assumenda nostrum dolor maxime recusandae hic deserunt neque illum.S[...]</p>
-                    <hr>
-                    <h4>Histoire 5</h4>
-                    <br>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores voluptatum error eaque, quia
-                        placeat
-                        alias
-                        debitis earum dolorum aperiam obcaecati
-                        laborum assumenda nostrum dolor maxime recusandae hic deserunt neque illum.S</p>
-                    </section>
-                <section class="sections2">
-                    <button class="button"><img src="./images/add.png" alt="Ajouter une histoire"><br>Ajouter une
-                        histoire</a></button>
-                    <br>
-                    <label  for="site-search">Mots-clés:</label>
-                    <br>
-                    <input type="search" size =50 style="height:50px" id="site-search" name="q">
-                    
-                    <button>Search</button>
-                    </div>
-                </section>
+                <div id="sectionStory">
+
+
+
+                </div>
             </article>
 
-
-        </main>
-        <footer>
-            <p>Coucou</p>
-
-        </footer>
-
+        </section>
+    </main>
+    <footer>
+        <img src="images/logo.png" alt="logo debuts de la fin">
+        <hr>
+        <div class="footer">
+            <a href="#"><i class="fa-brands fa-discord fa-xl" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a>
+            <p>©2023 <br> Les débuts de la fin </p>
+            <br>
+        </div>
+    </footer>
 </body>
+<script src="./scripts/displayStory.js"></script>
+
+</html>

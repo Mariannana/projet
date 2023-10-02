@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/*/////////////////////////////////////////////////*/
+                   /**HEADER/**/
+/*/////////////////////////////////////////////////*/
+
+header {
+    height: 100px;
+}
+
+#logo {
+    padding-left: 40px;
+}
+
+#nav-header img {
+    margin-right: 2rem;
+    height: 80px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    position: relative;
+}
+
+.search-form input[type="text"] {
+    width: 300px;
+}
+
+.search-form .search-icon {
+    right: 10px;
+    top: 50%;
+}
+
+
+/* HEADER SANS BURGER */
+
+.sidenav {
+    display:none;
+}
+ 
+#openBtn {
+    display: none;
+}
+
+.bottom-nav {
+	background-color: #161f22;
+	color: #f8f2f2;
+	display: flex;
+    justify-content: center;
+	font-family: 'Oswald';
+}
+
+.bottom-nav li:hover::before {
+	content: "";
+	position: absolute;
+	left: 60px;
+	bottom: 4px;
+	width: 4ch;
+	height: 3px;
+	background-color: #04879e;
+}
+
+
+#dropdown-menu li {
+	display: inline-block;
+	position: relative;
+	padding-left: 50px;
+}
+
+#dropdown-menu ul li {
+	display: inherit;
+}
+
+#dropdown-menu a {
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	padding: 10px;
+}
+
+#dropdown-menu ul {
+	position: absolute;
+	left: -999em;
+	text-align: left;
+	z-index: 1000;
+	background-color: #403E3E;
+}
+
+#dropdown-menu li:hover ul {
+	left: auto;
+}
+
+#dropdown-menu,
+#dropdown-menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+
+.search-form input[type="text"] {
+    font-size: 15px;
+}
+
+/*/////////////////////////////////////////////////*/
+                      /**MAIN/**/
+/*/////////////////////////////////////////////////*/
+
+article {
+    margin: 120px;
+}
+
+
+.intro{
+    margin: 80px 50px 80px 130px;
+    padding: 50px;
+    font-size: large;
+    display: block;
+    background-color: #273E59;
+}
+
+.intro h2 p {
+    margin-bottom: 20px;
+}
+
+
+.card{
+    margin: 10% 10% 100px 10%;
+    padding: 20px;
+}
+
+.card>.card-body {
+    padding: 10px 10px;
+}
+
+
+.card-body{
+    padding: 10px;
+}
+
+.card h3 {
+    font-size: x-large;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+.grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 100px;
+}
+
+.navbar>li {
+    padding: 0%;
+}
+
+.navbar>li a {
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+/* BODY images */
+
+.container_image .imgText {
+    top: 80%;
+}
+
+
+/*/////////////////////////////////////////////////*/
+                  /**SECTIONS/**/
+/*/////////////////////////////////////////////////*/
+
+.grid {
+    padding: 40px;
+}
+
+.grille2 {
+    margin-top: 0;
+}
+
+.menu{
+    display:none;
+}
+
+.button {
+    padding: 0;
+    margin: 0 20px 50px 0;
+}
+
+.sections2 {
+    padding: 150px;
+}
+
+/*images main*/
+.images {
+    width: 280px;
+    height: 280px;
+}
+
+.grid li img {
+    height: 150px;
+    margin: 40px 0 50px;
+}
+
+.section1 {
+    margin: 10% 10% 0;
+}
+
+.section1 p {
+    line-height: 1.5;
+    font-size: large;
+}
+
+/*////////////////////////////
+/*       CONTACT FORM       */
+/*//////////////////////////*/
+
+.title {
+    padding: 100px 250px 40px;
+}
+
+.container-contact {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-left: 150px;
+}
+
+.contact-info {
+	flex-basis: 30%;
+}
+
+
+.formulaire button[type="submit"]:hover {
+	background-color: #666;
+}
+
+
+/*/////////////////////////////////////////////////*/
+                   /**CONNEXION/**/
+/*/////////////////////////////////////////////////*/
+
+.grid-co {
+    display: grid;
+    grid-template-areas: "nav aside"
+    "article aside"
+    "article aside";
+    grid-template-columns:1fr 58%;
+    overflow: hidden;
+}
+
+.grid-co>nav {
+    height:150px;
+}
+
+#mainco{
+    padding-left: 60px;
+    font-size: 20px;
+    width: 200%;
+    height:100px;
+}
+
+.field-co input {
+    padding: 15px;
+    width: auto;
+    border-radius: 0px;
+    border-color: #0D5369;
+    margin: 5px;
+}
+
+.field-co {
+    text-align: left;
+    border: none;
+    padding: 50px;
+    padding-right: 200px;
+}
+
+.field-co legend {
+    text-align: center;
+}
+
+.field-co .button {
+    width: 200px;
+
+}
+
+.grid-co > article {
+    margin: 10px;
+    padding: 0 0 150px 150px;
+}
+
+.formulaire input{
+    margin: 10px;
+}
+
+.button{
+    height: 50px;
+    width: 150px;  
+}
+
+aside{
+    margin-bottom: 160px;  
+}
+
+article{
+    margin: 0px;
+}
+
+/*//////////// BODY images ////////////*/
+
+#mainco>img{
+    padding-bottom: 100px;
+}
+
+
+#chat{  
+    float: right;
+    width: 80%;
+}
+
+
+/*/////////////////////////////////////////////////*/
+                   /**ACCOUNT/**/
+/*/////////////////////////////////////////////////*/
+
+
+
+.account-flex {
+	gap:250px;
+}
+
+.account-flex ul li {
+    width: 350px;
+}
+
+.account-flex h1 {
+    margin:50px;
+}
+
+.account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-header button {
+    margin-top: 4%;
+}
+
+#logo-account {
+    height: 150px;
+    width: 150px;
+}
+
+/*/////////////////////////////////////////////////*/
+                   /**ADD STORY/**/
+/*/////////////////////////////////////////////////*/
+
+
+.info-story {
+    margin:0 250px;
+}
+
+.new-story {
+    margin:0 250px;
+}
+
+.new-story form {
+    margin-top: 50px;
+}
+
+.container-story h2 {
+    margin: 0 50px 50px;
+}
+
+.container-story{
+    margin-bottom: 50px;
+}
+
+.new-story .button {
+    width: 50%;
+}
+
+/*/////////////////////////////////////////////////*/
+                   /**SUCCESS STORY/**/
+/*/////////////////////////////////////////////////*/
+
+.success {
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.success img{
+    height:400px;
+    margin-top: 50px;
+}
+
+.success h3 {
+    color: #e7e8ee;
+    font-family: oswald;
+    margin-top: 30px;
+}
+
+
+

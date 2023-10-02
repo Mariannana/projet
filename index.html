@@ -5,140 +5,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="tablettes.css" media="only screen and (min-width: 600px) and (max-width: 1080px)">
-    <link rel="stylesheet" href="pc.css" media="only screen and (min-width: 1080px)">
+    <script src="https://kit.fontawesome.com/93b48439f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/tablettes.css"
+        media="only screen and (min-width: 600px) and (max-width: 1080px)">
+    <link rel="stylesheet" href="./styles/pc.css" media="only screen and (min-width: 1080px)">
 
     <title>Débuts de la fin</title>
 </head>
 
 <body>
+
     <header>
         <nav id="nav-header">
-            <a><img id="logo" src="./images/logo.png" alt="Debuts de la fin"></a>
-            <input id="searchbar" type="text" name="search" placeholder="Recherche">
-            <a href="connexion.html"><img src="./images/acount.png" alt="Debuts de la fin"></a>
+            <a href="http://localhost/debutsdelafin2/index.html"><img id="logo" src="./images/logo.png"
+                    alt="Debuts de la fin"></a>
+            <form class="search-form">
+                <input type="text" placeholder="Rechercher...">
+                <i class="fas fa-search search-icon"></i>
+            </form>
+            <a href="http://localhost/debutsdelafin2/connectionForm.php"><img src="./images/acount.png"
+                    alt="Debuts de la fin"></a>
         </nav>
+        <nav class="bottom-nav">
+            <ul id="dropdown-menu">
+                <li><a href="presentation.html">PRESENTATION / REGLES</a></li>
+                <li><a href="sections.html">ET SI ? </a></li>
+                <li><a href="sections.html">LES DEBUTS DE LA FIN</a></li>
+                <li><a href="sections.html">UNE AUTRE SAISON ? </a></li>
+                <li><a href="sections.html">CADAVRE EXQUIS </a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <nav class="sidenav" id="mySidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="sections.html">Et si ? </a></li>
+                <li><a href="sections.html">Les débuts de la fin</a></li>
+                <li><a href="sections.html">Une autre saison ? </a></li>
+                <li><a href="sections.html">Cadavre Exquis </a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
     </header>
 
     <main>
-      <!--  <span><a href="auteurs.html">Auteurs</a> <a href="oeuvres.html">Toutes les oeuvres</a></span>-->
-        <article class="card">
-            <div class="card-title">
-                <h3>Présentation, règles:</h3>
-            </div>
-            <div class="card-body">
-                <p>Bienvenue sur notre site, où les passionnés de littérature et de pop culture peuvent venir partager
-                    leurs histoires et leurs idées sur leurs univers de fiction préférés.
-                    Nous croyons que la fan fiction est un moyen formidable d'exprimer sa créativité et sa passion pour
-                    les histoires qui nous ont marquées
-                    <a href="Présentation.html">[...]</a>
-                </p>
-            </div>
+        <article class="intro">
+            <h2>LES DEBUTS DE LA FIN<span class="underline"></span> </h2>
+            <p>
+                Bienvenue dans notre monde où l'imagination et la créativité règnent en maître !
+                <br>
+                Et si vous pouviez changer le déroulement d'une histoire ? <br>
+                Ici, vous avez le pouvoir de modifier le cours des récits, de donner une suite aux œuvres qui vous ont
+                enchanté(e)s, voire même de réécrire une saison entière d'une série ( on pense fort à une série avec des
+                dragons...!), <br>
+                ou en anticipant la prochaine dans une autre saison.
+                <br> Partagez vos idées et collaborez avec nos auteurs passionnés dans un Cadavre Exquis exaltant, où
+                les fils narratifs s'entremêlent pour tisser une histoire infinie. Rejoignez-nous et laissez votre plume
+                danser avec une créativité sans entraves.
+            </p>
+            <br>
+            <a class="button-story" href="addStoryForm.php">Ajoute une histoire !</a>
         </article>
+
         <nav>
             <ul class="navbar">
-                <li><a href="sections.html"><img class="images" src="./images/back.png" alt="Et si..."><br>Et si...</a>
-                </li>
-                <li><a href="sections.html"><img class="images" src="./images/batman.png" alt="débuts de la fin"><br>Les
-                        débuts de la fin...</a></li>
-                <li><a href="sections.html"><img class="images" src="./images/bb.png" alt="Une autre saison"><br>Une
-                        autre saison?</a></li>
-                <li><a href="sections.html"><img class="images" src="./images/dark.png" alt="Cadavre exquis"><br>Cadavre
-                        exquis</a></li>
-
+                <li class="container_image"><a href="sections.html"><img class="images" src="./images/back.png"
+                            alt="Et si...">
+                        <p class="imgText">Et si...</p>
+                    </a></li>
+                <li class="container_image"><a href="sections.html"><img class="images" src="./images/batman.png"
+                            alt="débuts de la fin">
+                        <p class="imgText">Débuts de la fin</p>
+                    </a></li>
+                <li class="container_image"><a href="sections.html"><img class="images" src="./images/bb.png"
+                            alt="Une autre saison">
+                        <p class="imgText">Une autre saison?</p>
+                    </a></li>
+                <li class="container_image"><a href="sections.html"><img class="images" src="./images/dark.png"
+                            alt="Cadavre exquis">
+                        <p class="imgText">Cadavre exquis</p>
+                    </a></li>
             </ul>
         </nav>
-        <article class="card">
-            <div class="card-title">
-                <h3>Les histoires les mieux notées du moment:</h3>
-            </div>
-            <div class="card-body">
-                <h4>Un Hobbit courageux:</h4>
-                <p>Le seigneur des anneaux : Aragorn, le hobbit, était un personnage discret et effacé,
-                    mais il cachait un grand courage et une détermination inébranlable [...]
 
-                </p>
-                <hr>
-                <h4>Batman et Sherlock:</h4>
-                <p>Batman : Sherlock est à Gotham pour enquêter sur une série de meurtres
-                    étranges qui ont eu lieu dans la ville. Il est intrigué par l'identité de Batman, il décide
-                    alors de lui demander de l'aide pour résoudre son enquête [...]
-                </p>
-                <hr>
-                <h4>Booker DeWitt à Rapture:</h4>
-                <p>Booker rencontre un groupe de survivants
-                    qui lui font part d'un plan pour quitter la
-                    ville: ils ont réussi à réparer un vieux
-                    sous-marin qui se trouve dans les
-                    entrailles de Rapture [...]
-                </p>
+        <article class="card">
+            <h3>LES HISTOIRES LES MIEUX NOTEES DU MOMENT:<span class="underline2"></span></h3>
+            <div id="bestStory" class="card-body">
+             
+
             </div>
         </article>
+
         <section class="grille">
             <article class="card">
-                <div class="card-title">
-                    <h3>Dernières histoires ajoutées:</h3>
-                </div>
-                <div class="card-body">
-                    <h4>Bordeciel accueille un nouveau Dovahkiin:</h4>
-                    <p>
-                        Il était une fois un dragonnier, Eorlund,
-                        qui vivait dans les montagnes.
-                        Il passait ses jours à chasser des dragons
-                        et à collecter leur os et leur écaille pour
-                        fabriquer des armes et des armures [...]
-                    </p>
-                    <hr>
-                    <h4>Guts, sans Femto:</h4>
-                    <p>
-                        Guts, le héros, a finalement vaincu son
-                        ancien ami et maître, le roi fou Femto,
-                        mais il a été gravement blessé lors de la
-                        bataille. [...]
-                    </p>
-                    <hr>
-                    <h4>Une nouvelle Goldie?:</h4>
-                            <p> Marv était réticent à accepter le travail,
-                                mais quelque chose dans la voix de la
-                                femme l'a poussé à accepter. Il a
-                                commencé à suivre les pistes et à
-                                interroger les suspects. [...]
-                            </p>
+                <h3>DERNIERES HISTOIRES AJOUTEES:<span class="underline2"></span></h3>
+
+                <div id="lastAdd" class="card-body">
+
+
                 </div>
             </article>
+
             <article class="card">
                 <div class="card-title">
-                    <h3>Aléatoire...</h3>
+                    <h3>ALEATOIRE<span class="underline2"></span></h3>
                 </div>
-                <div class="card-body">
-                    <h4>Money Money Money:</h4>
-                    <p>Tony Soprano était dans une situation délicate. Il avait perdu tout son argent en jouant au
-                        poker, et il était incapable de rembourser la dette qu'il avait contractée. Christopher, le
-                        Parrain commençait à perdre patience, et il y avait des rumeurs selon lesquelles certains
-                        membres de la famille voulaient le tuer pour cette dette impayée...
-                    </p>
-                    <hr>
-                    <h4>En quête de Sulfura:</h4>
-                    <p>Cela faisait des années que Max avait cherché un Pokémon légendaire, et il avait finalement
-                        trouvé une piste qui le mènerait à la grotte où se trouvait Sulfura. Il était déterminé à
-                        réussir cette fois-ci.
-                    </p>
-                    <hr>
-                    <h4>Quand Chun Li rencontre Akuma:</h4>
-                    <p>Chun-Li était en train de s'entraîner dans un dojo isolé, concentrée sur ses mouvements et sur la
-                        perfection de ses techniques. Elle ne remarqua pas la présence silencieuse de Akuma, qui avait
-                        suivi son entraînement depuis un moment.
+                <div id="randomStory" class="card-body">
+
+
                 </div>
             </article>
+
         </section>
     </main>
     <footer>
-        <p>Coucou</p>
-
+        <img src="images/logo.png" alt="logo debuts de la fin">
+        <hr>
+        <div class="footer">
+            <a href="#"><i class="fa-brands fa-discord fa-xl" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a>
+            <p>©2023 <br> Les débuts de la fin </p>
+            <br>
+        </div>
     </footer>
 </body>
-
+<script src="./scripts/displayStory.js"></script>
+<script src="./scripts/menu_burger.js"></script>
 </html>
